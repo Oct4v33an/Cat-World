@@ -1,18 +1,10 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-    <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Cat world</title>
-        <!-- font-awesome -->
+        <!-- font -->
         <link rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 
@@ -20,6 +12,9 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <div class="header" id="myHeader">
+            <h2>Cat World</h2> 
+        </div>
         <button class="sidebar-toggle">
             <i class="fas fa-bars"></i>
         </button>
@@ -67,9 +62,42 @@
                 </li>
             </ul>
         </aside>
+            <!-- core of the website -->
+            <section class="menu">
+                <div class="title">
+                <h2>Behold the kittens!</h2>
+                <div class="underline"></div>       
+
+
+                 </div> 
+                <!-- filter -->  
+                <div class="btn-container">
+                 <button class="filter-btn" type="button" data-id="all">all</button>
+                 <button class="filter-btn" type="button" data-id="orange-cat">Orange cats</button>
+                 <button class="filter-btn" type="button" data-id="black-cat">Black Cats</button>
+                 <button class="filter-btn" type="button" data-id="calico-cat">Calico Cats</button>
+                 <button class="filter-btn" type="button" data-id="striped-cat">Striped Cats</button>
+                 <button class="filter-btn" type="button" data-id="grey-cat">Grey Cats</button>
+                </div> 
+                <!-- kitties --> 
+                <div class="section-center">
+                    <!-- single kitty -->
+                    <article class="menu-item">
+                        <img src="pics/kitty1.png" class="photo" alt="kitty"/>
+                        <div class="item-info">
+                            <header>
+                            <h4>Trump kitteh</h4>
+                            <h4 class="cuteness">9</h4>
+                        </header>
+                        <p class= "item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur vitae in ratione delectus incidunt vel. Perferendis cumque fugit ratione libero, architecto quas repellat quisquam sit cupiditate amet consectetur corrupti? </p>
+                        </div>
+                    </article>
+
+
+                </div>    
+            </section>
         <!-- javascript -->
-        <script src="app.js"></script>
+        <script src="sidebar.js"></script>
+        <script src="cat-app.js "></script>
     </body>
-</html>
-</body>
 </html>
